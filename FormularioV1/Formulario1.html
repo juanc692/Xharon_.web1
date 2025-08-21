@@ -6,14 +6,26 @@
     <title>Formulario de componentes</title>
 </head>
 <body>
-    <div>
-    <form action="" method="post" style="width: 200px;text-align: center;">
-        <label for="name">Nombre completo</label>
-        <input type="text" name="name" id="name">
-        <label for="mail">Correo</label>
-        <input type="email" name="mail" id="mail">
-    </form>
+
+    <div style="width: 25%;margin: 0 auto;text-align: center;">
+        <h3>Registro de equipos</h3>
+        <h6 style="margin-top: -18px;">Formulario_v1</h6>
+        <form action="" method="post">
+            <label for="name">Nombre completo</label>
+            <input type="text" name="name" id="name">
+            <label for="mail">Correo</label>
+            <input type="email" name="mail" id="mail" placeholder="micorreo@gmail.com" style="text-align: center;">
+            <label for="cont">Contraseña</label>
+            <input type="password" name="cont" id="cont"><br><br>
+            <label for="pc">Modelo del equipo</label>
+            <input type="text" name="pc" id="pc" placeholder="hp-2015">
+            <button type="submit" style="margin: 10px;">Enviar</button>
+        </form>
     </div>
+
+    <footer>
+        <p>&copy;Todos los derechos reservados</p>
+    </footer>
     
 </body>
 </html>
