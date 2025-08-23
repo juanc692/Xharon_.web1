@@ -21,6 +21,7 @@ div{
     color: rgb(255, 255, 255); /* color del texto*/
     border-color: black;
     border-style: double;
+    border-radius: 15%;
     transition: transform 0.3s ease;
     /* background-color: rgb(126, 126, 126); */
 }
@@ -54,7 +55,7 @@ div:hover{
 }
 
 .void{
-    background-color: brown;
+
     border-color: rgba(0, 0, 0, 0);
     color: rgba(0, 0, 0, 0);
     
@@ -85,25 +86,40 @@ label{
 
 .no_reactivo
 {
-
+    background-color: rgb(59, 82, 207);
 }
 .gas_noble
 {
-
+    background-color: rgb(168, 95, 95);
 }
 .alcalino
-{}
+{
+    background-color: rgb(71, 113, 116);
+}
 .metaloide
-{}
+{
+    background-color: rgb(143, 137, 83);
+}
 .postransicionales
-{}
+{
+    background-color: rgb(64, 117, 84);
+}
+.transicionales{
+    background-color: rgb(101, 70, 109);
+}
 .alcalinotérreos
-{}
+{
+    background-color: rgb(136, 88, 88);
+}
 .Lantánidos
-{}
+{
+    background-color: rgb(42, 47, 117);
+}
 .actinoides
-{}
+{
+    background-color: rgb(184, 101, 54);
+}
 .desconocidas
 {
-    
+    background-color: rgb(126, 126, 126);
 }
