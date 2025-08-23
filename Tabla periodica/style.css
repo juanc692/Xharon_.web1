@@ -1,7 +1,6 @@
 main{
     display: grid;
     place-items: center;
-    background-color: aqua;
 }
 h1{
     text-align: center;
@@ -14,8 +13,8 @@ section{
     min-width: max-content;
 }
 div{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     /* display: flex; */
     justify-content: center;
     align-items: center;
@@ -23,7 +22,7 @@ div{
     border-color: black;
     border-style: double;
     transition: transform 0.3s ease;
-    background-color: rgb(126, 126, 126);
+    /* background-color: rgb(126, 126, 126); */
 }
 div:hover{
     transform: scale(1.2);
@@ -64,6 +63,26 @@ div:hover{
     margin-right: 30px;
 }
 
+span{
+    width:  20px;
+    height: 20px;
+    border-radius: 50%;
+    
+    border-color: rgb(255, 255, 255);
+    border-style:inset double;
+    transition: transform 0.3s ease;
+    
+
+}
+span:hover
+{
+    transform: scale(1.5);
+}
+
+label{
+    width: 200px;
+}
+
 .no_reactivo
 {
 
@@ -85,4 +104,6 @@ div:hover{
 .actinoides
 {}
 .desconocidas
-{}
+{
+    
+}
