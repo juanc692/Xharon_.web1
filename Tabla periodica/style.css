@@ -10,14 +10,14 @@ main{
 h1{
     text-align: center;
 }
-section{
+section,tr{
     
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
     min-width: max-content;
 }
-div{
+div,th,td{
     width: 60px;
     height: 60px;
     /* display: flex; */
@@ -30,7 +30,7 @@ div{
     transition: transform 0.3s ease;
     /* background-color: rgb(126, 126, 126); */
 }
-div:hover{
+div:hover,th:hover,td:hover{
     transform: scale(1.2);
 }
 
