@@ -55,8 +55,20 @@ table{
     text-align: center;
 }
 th,td{
-    background-color: aqua;
-    width: 100px;
+    background-color: rgb(153, 154, 192);
+    width: 200px;
+    border-radius: 5px;
+    border: 2px solid black
+}
+.row{
+    height: 70px;
+    transition: transform 0.3s ease;
+}
+.row:hover{
+    transform: scale(1.2);
+}
+.row:active{
+    transform: scale(1.1);
 }
 
 section{
