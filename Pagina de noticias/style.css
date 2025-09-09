@@ -1,6 +1,18 @@
-
-header,footer{
+body{
+    font-family: sans-serif;
     text-align: center;
+    background-color: #001f3f;
+}
+.divBody
+{
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    width: 96%;
+    height: 96%;
+    background-color: rgb(229, 224, 255);
+}
+header,footer{
     background-color: rgb(162, 162, 214);
     height: 30px;
     align-items: center;
@@ -8,27 +20,61 @@ header,footer{
     justify-content: center;
     width: 100%;
 }
+header{
+    font-style: italic;
+    font-weight: bold;
+}
+footer{
+    position: fixed;
+    bottom: 10px;
+}
+nav{
+    position: relative;
+    width: 96%;
+    left: 2%;
+    
+    
+}
 ul{
     display: flex;
     justify-content: space-between;
+    
 }
 li{
     color: white;
     border: 2px groove black;
-    
     display: grid;
     align-items: center;
-    justify-content: center;
     width: 200px;
     height: 25px;
+    margin-right: 5%;
+}
+table{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+th,td{
+    background-color: aqua;
+    width: 100px;
+}
+
+section{
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
 }
 .card{
-    background-color: rgb(35, 55, 170);
+    background-color: rgba(35, 55, 170,0.8);
     padding: 1px;
     margin: 10px;
     width:  250px;
     height: 250px;
-    display: flex;
+    min-width: 250px;
     position: relative;
-
+    transition: transform 0.3s ease;
+}
+.card:hover{
+    transform: scale(1.2);
+    background-color: rgba(35, 55, 170,1);
 }
