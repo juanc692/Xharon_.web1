@@ -1,6 +1,6 @@
 const abrir = document.getElementById("abrirModal");
 const cerrar = document.getElementById("cerrarModal");
-const cuadro = document.querySelector(".overlay");
+const cuadro = document.getElementById("ovrl");
 
 function mostrarTerminos()
 {

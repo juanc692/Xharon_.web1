@@ -1,27 +1,4 @@
-.boton{
-    cursor: pointer;
-    width: 100px;
-    height: 40px;
-    border: none;
-    color: white;
-    font-weight: bold;
-    border-radius: 20px;
-    background-color: rgb(56, 82, 155);
-}
-.boton:hover
-{
-    transform: scale(1.2);
-    background-color: rgb(44, 68, 134);
-}
-.boton:active{
-    background-color: rgb(44, 134, 114);
-}
-#abrirModal{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
+
 
 .overlay{
     display: none;
@@ -34,8 +11,9 @@
     width: 700px;
     height: 500px;
     /* esto mueve el elemento hacia la mitad de su ancho y alto */
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(38, 52, 99, 0.5);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 .modal{
     overflow: hidden;
@@ -48,4 +26,29 @@
 
 .visible{
     display: block;
+}
+
+.boton_cerrar,.boton_abrir{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: rgb(56, 82, 155);
+}
+.boton_abrir{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.boton_cerrar:hover
+{
+    transform: scale(1.2);
+    background-color: rgb(44, 68, 134);
+}
+.boton_cerrar:active,.boton_abrir:active{
+    background-color: rgb(44, 134, 114);
 }
