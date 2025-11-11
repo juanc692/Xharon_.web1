@@ -1,0 +1,105 @@
+body
+{
+    background-color: rgb(13, 11, 32);
+    font-family: sans-serif;
+    padding: 20px;
+    padding-top: 0;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 95, 95, 0.322);
+}
+
+.mainIntro{
+    justify-content: center;
+    align-items: center;
+}
+
+button
+{
+    width: 160px;
+    height: 40px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(89, 124, 241);
+}
+button:hover{
+    background-color: rgb(68, 96, 189);
+}
+button:active{
+    background-color: rgb(40, 65, 145);
+}
+
+.intro{
+    display: grid;
+    place-items: center;
+}
+.intro span{
+    height: 10px;
+    width: 100%;
+    background-color: rgba(53, 83, 139, 0.747);
+    border-radius: 100px;
+}
+@keyframes glow
+{
+    0%
+    {
+    box-shadow: 0 0 15px 2px rgba(47, 67, 247, 0.8);
+    }
+    20%
+    {
+    box-shadow: 0 0 15px 5px rgba(0, 26, 255, 1);
+    }
+    30%{
+    box-shadow: 0 0 15px 5px rgb(45, 66, 255);
+    }
+    50%{
+    box-shadow: 0 0 15px 3px rgb(80, 156, 255);
+    }
+    80%{
+    box-shadow: 0 0 15px 3px rgb(80, 156, 255);
+    }
+    100% 
+    {
+    box-shadow: 0 0 15px 2px rgba(68, 87, 255, 0.8);
+    }
+}
+.spanGlow{
+    animation: glow;
+    animation-duration: 0.5s,5s;
+    animation-timing-function:ease-in-out,ease-in-out;
+    animation-iteration-count: 1,infinite;
+    animation-fill-mode:forwards, none;
+    animation-direction: normal,alternate;
+}
+/* PAGINA NORMAL */
+.spanTitle{
+    width: 100%;
+    height: 70px;
+    /* background-color: rgb(94, 136, 146); */
+    display: flex;
+}
+.title{
+    font-weight: bold;
+    place-self: center left;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    /* left:50%; */
+    left: 7%;
+    color: white;
+}
+/* .headerBLock{
+    background-color: aqua;
+    width: 80px;
+    height: 100%;
+} */
+.subheader{
+    width: 100%;
+    height: 40px;
+    background-color: brown;
+}

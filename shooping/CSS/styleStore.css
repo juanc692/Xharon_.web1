@@ -1,0 +1,44 @@
+.container{
+    flex: 1;
+    /* display: block; */
+    /* opacity: 0; */
+}
+
+.product{
+    height: 400px;
+    background-color: rgb(38, 73, 102);
+    overflow: hidden;
+    margin-bottom: 10px;
+
+}
+.product h3{
+    text-align: center;
+    color: white;
+}
+
+.previous{
+    background-color: aqua;
+    width: 200px;
+    height: 300px;
+}
+.next{
+    background-color: rgb(136, 255, 0);
+    width: 200px;
+    height: 300px;
+}
+
+.carousel{
+    background-color: brown;
+    height:300px;
+    flex:1;
+    display: flex;
+}
+
+.item{
+    height: 400px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.479);
+    color: black;
+    flex: 1;
+    margin-left: 30px;
+}
