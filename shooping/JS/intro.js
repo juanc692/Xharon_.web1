@@ -1,4 +1,5 @@
 const main = document.getElementById('main');
+const content = document.getElementById('container');
 
 function lerp(a, b, t) {
     return a + (b - a) * t;
@@ -18,6 +19,8 @@ function smoothLerp(a, b, t) {
 function intro()
 {
     main.classList.add('mainIntro');
+    content.style.opacity = '0';
+    content.style.display = 'none';
     let contador = 0;
     const intro = document.createElement('div');
     intro.classList.add('intro');
@@ -40,9 +43,21 @@ function intro()
             contador = 50;
             smoothAnimation();
             main.classList.remove('mainIntro');
+            content.style.display = 'block';
+            setTimeout(fadeProductsIn, 1000);
         }
     }
-
+    let time = 0;
+    function fadeProductsIn()
+    {
+        if(time < 1)//opacity
+        {
+            time = smoothLerp(time,1.1,0.1);
+            content.style.opacity = `${time}`;
+            console.log(time)
+            setTimeout(fadeProductsIn, 10);
+        }
+    }
     const spanTitle = document.querySelector('.title');
     function smoothAnimation() {
         if (contador > 1.01) {

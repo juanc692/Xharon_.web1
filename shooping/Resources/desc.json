@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "descripcion": "Mochila resistente y versátil, ideal para el día a día y paseos al aire libre. Cuenta con compartimento acolchado para laptops de hasta 15 pulgadas."
+  },
+  {
+    "id": 2,
+    "descripcion": "Camiseta casual de corte ajustado, ligera y cómoda, perfecta para usar en cualquier ocasión o para fanáticos del béisbol."
+  },
+  {
+    "id": 3,
+    "descripcion": "Chaqueta de algodón para hombre, cálida y resistente, ideal para actividades al aire libre como senderismo, camping o ciclismo."
+  },
+  {
+    "id": 4,
+    "descripcion": "Camiseta casual de corte slim, básica y cómoda, disponible en varios colores, ideal para uso diario."
+  },
+  {
+    "id": 5,
+    "descripcion": "Pulsera de oro y plata con diseño de dragón inspirado en la mitología, un accesorio elegante que simboliza protección y amor."
+  },
+  {
+    "id": 6,
+    "descripcion": "Anillo pequeño de oro sólido, elegante y sencillo, ideal para regalar o complementar tu colección de joyería."
+  },
+  {
+    "id": 7,
+    "descripcion": "Anillo de compromiso clásico con baño de oro blanco, perfecto para ocasiones especiales como bodas o aniversarios."
+  },
+  {
+    "id": 8,
+    "descripcion": "Pendientes de acero inoxidable con baño de oro rosa, diseño moderno y duradero para uso diario."
+  },
+  {
+    "id": 9,
+    "descripcion": "Disco duro externo portátil de 2TB, compatible con USB 3.0 y 2.0, ideal para almacenar y transferir datos rápidamente."
+  },
+  {
+    "id": 10,
+    "descripcion": "SSD interno de 1TB para mejorar el rendimiento del PC, con velocidades de lectura/escritura rápidas y confiables."
+  },
+  {
+    "id": 11,
+    "descripcion": "Unidad SSD de 256GB con tecnología 3D NAND y SLC Cache, diseñada para acelerar el arranque y mejorar la eficiencia del sistema."
+  },
+  {
+    "id": 12,
+    "descripcion": "Disco duro externo de 4TB compatible con PS4, ideal para expandir tu almacenamiento y jugar en cualquier lugar."
+  },
+  {
+    "id": 13,
+    "descripcion": "Monitor Full HD de 21,5 pulgadas con pantalla IPS ultra delgada, ideal para trabajar, estudiar o disfrutar de contenido multimedia."
+  },
+  {
+    "id": 14,
+    "descripcion": "Monitor curvo para gaming de 49 pulgadas, ultrapanorámico con tecnología QLED y alta tasa de refresco para una experiencia inmersiva."
+  },
+  {
+    "id": 15,
+    "descripcion": "Chaqueta de invierno 3 en 1 para mujer, con forro desmontable, cálida, ligera y adaptable a diferentes climas."
+  },
+  {
+    "id": 16,
+    "descripcion": "Chaqueta de moto de cuero sintético para mujer, con capucha desmontable y detalles modernos, cómoda y estilizada."
+  },
+  {
+    "id": 17,
+    "descripcion": "Impermeable ligero con capucha ajustable, ideal para actividades al aire libre y viajes en climas lluviosos."
+  },
+  {
+    "id": 18,
+    "descripcion": "Blusa de mujer de manga corta y cuello barco, ligera y elástica, perfecta para el uso diario y clima cálido."
+  },
+  {
+    "id": 19,
+    "descripcion": "Camiseta de mujer transpirable y ligera, con tecnología que absorbe la humedad, ideal para mantenerte fresca y cómoda."
+  },
+  {
+    "id": 20,
+    "descripcion": "Camiseta casual de algodón con corte cómodo y cuello en V, perfecta para uso diario en cualquier estación."
+  }
+]

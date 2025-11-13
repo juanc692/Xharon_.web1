@@ -79,8 +79,7 @@
     flex: 1;
     display: grid;
     place-content: center;
-    color: white;
-
+    color: rgb(255, 255, 255);
 }
 .account span{
     text-align: center;
@@ -106,5 +105,4 @@
     color: white;
     font-weight: bold;
     align-items: center;
-
 }
