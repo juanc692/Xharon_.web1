@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/styleHeader.css">
     <link rel="stylesheet" href="CSS/styleStore.css">
+    <link rel="icon" href="Resources/letter-a-icon-png-25.png" type="image/x-icon">
     <title>QuickShop</title>
 </head>
 <body>
@@ -35,12 +36,12 @@
             </div>
             <div class="header-cart">
                 <div id="account" class="account">
-                    <span><b>Iniciar sesion</b></span>
-                    <button>Iniciar sesion</button>
+                    <span id="userLabel"><b>Iniciar sesión</b></span>
+                    <button id="btnAccount">Iniciar sesión</button>
                 </div>
                 <div id="cartShoop" class="cartShoop">
-                    <img src="Resources/cart_106649.png" alt="">
-                    <div>
+                    <img id="cart" src="Resources/cart_106649.png" alt="">
+                    <div id="cartTotal">
                         
                     </div>
                 </div>
@@ -66,9 +67,12 @@
                 </div>
             </div>
         </div>
-        <div class="Divaccount" id="Divaccount"></div>
+        <div class="Divaccount" id="Divaccount">
+        </div>
+        <div class="Divcart" id="Divcart"></div>
     </main>
 </body>
 </html>
 <!-- <script src="JS/intro.js"></script> -->
-<script src="JS/script.js"></script>
+<script type="module" src="JS/userStorage.js"></script>
+<script type="module" src="JS/script.js"></script>

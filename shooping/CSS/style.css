@@ -34,9 +34,11 @@ button
 }
 button:hover{
     background-color: rgb(68, 96, 189);
+    color: white;
 }
 button:active{
     background-color: rgb(40, 65, 145);
+    color: white;
 }
 
 .intro{

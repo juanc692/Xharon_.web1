@@ -175,4 +175,101 @@
     height: 100%;
     top: 0;
     display: none;
+    place-items: center;
+    background-color: rgba(7, 4, 36, 0.671);
+}
+
+.accountUser{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(7, 4, 36);
+    color: white;
+    border-radius: 20px;
+    /* display: flex; */
+    overflow: hidden;
+    border: 4px solid white;
+}
+.accountLogIn
+{
+    width: 600px;
+    height: 400px;
+    background-color: rgb(7, 4, 36);
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 4px solid white;
+}
+.accountLogIn input{
+    padding: 10px;
+    margin: 10px;
+}
+.accountLogIn button{
+    margin: 10px;
+    
+}
+
+.Divcart{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+    place-items: right;
+    background-color: rgba(7, 4, 36, 0.671);
+}
+
+.Btnclose{
+    background-color: transparent;
+    color: black;
+    width: 100%;
+}
+
+.cartDiv{
+    width: 300px;
+    height: 100%;
+    /* background-color: rgb(7, 4, 36); */
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    /* display: flex; */
+    overflow: hidden;
+    border: 4px solid white;
+}
+.cartItemsContainer {
+    flex: 1; 
+    overflow-y: auto; 
+    padding: 10px 0;
+}
+.cartItem{
+    color: black;
+    width: 92%;
+    height: 100px;
+    background-color: rgba(37, 23, 77, 0.158);
+    overflow: hidden;
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.cartItem img{
+    object-fit: contain;
+    height: 100%;
+    width: 70px;
+    transform: scale(0.8);
+}
+.cartItem span{
+    max-width: 100px;
+    white-space: nowrap;    
+    overflow: hidden;       
+    text-overflow: ellipsis; 
+    display: inline-block; 
+}
+.cartItem button{
+    max-width: 50px;
+    height: 100%;
+    /* margin-left: auto; */
 }

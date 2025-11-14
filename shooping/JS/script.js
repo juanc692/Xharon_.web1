@@ -1,4 +1,6 @@
-const cartTotal = document.querySelector('.cartShoop div');
+import {sesionActive,Account,updateCart,logIn,showCart} from './userStorage.js';
+
+
 const dropdownSearch = document.getElementById('selectField');
 const itemDescription = document.getElementById('itemDescription');
 
@@ -18,9 +20,6 @@ itemDescription.addEventListener("click", (e) => {
         }
     });
 
-const span = document.createElement('span');
-span.textContent = '0';
-cartTotal.appendChild(span);
 
 const container = document.getElementById('container');
 const stock = [];
@@ -135,11 +134,7 @@ fillStock().then(() => {
             button.innerHTML=`${e.price}$<br>Añadir al carrito`;
 
             button.addEventListener('click', () => {
-                itemDescription.style.display = 'grid'
-                
-// imagePreview
-// productDescription
-// productPrice
+                itemDescription.style.display = 'grid';
                 const image = document.createElement('img')
                 image.src = e.image;
                 const title = document.createElement('h3');
@@ -164,7 +159,33 @@ fillStock().then(() => {
 
                 const addCart = document.createElement('button');
                 addCart.innerHTML=`${e.price}$<br>Añadir al carrito`;
+
+                 addCart.addEventListener('click', () => {
+                    if(sesionActive)
+                    {
+                        Account.cart.push(e);
+                        updateCart();
+                        showCart();
+                        cancel.click();
+
+                    }else{
+                        logIn();
+                    }
+                });
+
+                const cancel = document.createElement('button');
+                cancel.textContent = 'Cancelar';
+                cancel.addEventListener('click', () => {
+                    itemDescription.style.display = 'none';
+                    imagePreview.innerHTML=''
+                    productDescription.innerHTML = '';
+                    productPrice.innerHTML = '';
+                });
+
+               
+
                 productPrice.append(addCart);
+                productPrice.append(cancel);
           
             });
 
