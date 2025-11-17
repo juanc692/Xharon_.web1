@@ -179,66 +179,6 @@ export function updateCart()
     }
 }
 
-// export function showCart()
-// {
-//     cartPanel.style.display = 'grid';
-//     cartPanel.innerHTML = "";
-//     const div = document.createElement('div');
-//     div.classList.add('cartDiv');
-//     const title = document.createElement('h1');
-//     title.textContent = 'Carrito de compras';
-//     const close = document.createElement('button');
-//     close.textContent = 'Cerrar';
-//     close.addEventListener('click', () => {
-//         cartPanel.style.display = 'none';
-//         cartPanel.innerHTML = "";
-//     });
-//     close.classList.add('Btnclose');
-//     const buy = document.createElement('button');
-//     buy.textContent = 'Comprar';
-//     buy.classList.add('Btnclose');
-//     buy.addEventListener('click', () => {
-//         cartPanel.style.display = 'none';
-//         cartPanel.innerHTML = "";
-//         Account.cart = [];
-//         //span.textContent = Account.cart.length;
-//     });
-
-//     div.appendChild(title);
-//     div.appendChild(close);
-//     cartPanel.appendChild(div);
-//     Account.cart.forEach((e) => {
-//         const item = document.createElement('div');
-//         item.classList.add('cartItem');
-
-//         const img = document.createElement('img');
-//         img.src = e.image;
-
-//         const title = document.createElement('span');
-//         title.textContent = e.title;
-//         title.title = e.title;
-
-//         const price = document.createElement('span');
-//         price.textContent = "$"+e.price;
-
-//         const remove = document.createElement('button');
-//         remove.textContent = 'Quitar';
-//         remove.addEventListener('click', () => {
-//             const index = Account.cart.indexOf(e);
-//             if (index !== -1) {
-//                 Account.cart.splice(index, 1);
-//                 showCart();
-//             }
-//         });
-
-//         item.appendChild(img);
-//         item.appendChild(title);
-//         item.appendChild(price);
-//         item.appendChild(remove);
-//         div.appendChild(item);
-//     });
-// }
-
 export function showCart() {
     cartPanel.style.display = 'grid';
     cartPanel.innerHTML = "";

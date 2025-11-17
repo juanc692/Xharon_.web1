@@ -2,6 +2,7 @@ import {sesionActive,Account,updateCart,logIn,showCart} from './userStorage.js';
 
 
 const dropdownSearch = document.getElementById('selectField');
+const searchField = document.getElementById('searchfield');
 const itemDescription = document.getElementById('itemDescription');
 
 const imagePreview = document.getElementById("imgPrev");
@@ -23,6 +24,11 @@ itemDescription.addEventListener("click", (e) => {
 
 const container = document.getElementById('container');
 const stock = [];
+
+function sanitize(str) {
+    return str.replace(/[^a-zA-Z0-9_-]/g, "");
+}
+
 
 async function fillStock()
 {
@@ -93,7 +99,9 @@ fillStock().then(() => {
     categories.forEach((element,key) => {
         const product = document.createElement('div');
         product.classList.add('product');
-        product.id = "ID"+key;
+        const safeId = "ID" + sanitize(key);
+        product.id = safeId;
+
         const title = document.createElement('h3');
         const contain = document.createElement('div');
         contain.classList.add('SubContain');
@@ -206,7 +214,7 @@ fillStock().then(() => {
 
         btnPrevious.addEventListener('click', () => {
             carousel.scrollBy({
-                left: -300, // cantidad de desplazamiento
+                left: -300, // 
                 behavior: 'smooth'
             });
         });
@@ -218,7 +226,7 @@ fillStock().then(() => {
             });
         });
 
-        ////añadir
+
 
         contain.appendChild(previous);
         contain.appendChild(carousel);
@@ -230,7 +238,7 @@ fillStock().then(() => {
         container.append(product);
         if(!dropdown.has(key))
         {
-            dropdown.set(key, product.id);
+            dropdown.set(key, safeId);
         }
         
         
@@ -241,6 +249,7 @@ fillStock().then(() => {
         option.textContent = key;
         dropdownSearch.appendChild(option);
         });
+
     dropdownSearch.addEventListener('change', (event) => {
         const selectedOption = event.target.value;
         if (selectedOption === 'Todos los elementos') {
@@ -267,6 +276,59 @@ fillStock().then(() => {
             });
         }
     });
+
+
+    searchField.addEventListener("input", () => {
+        const query = searchField.value.toLowerCase().trim();
+
+        
+        if (query === "") {
+            stock.forEach(producto => {
+                const safeId = dropdown.get(producto.category);
+                const productDiv = document.getElementById(safeId);
+                const items = productDiv.querySelectorAll(".item");
+
+                items.forEach(item => {
+                    item.style.display = "block";  
+                });
+
+                productDiv.style.display = "block";
+            });
+            dropdownSearch.dispatchEvent(new Event("change"));
+            return;
+            
+        }
+
+
+        dropdown.forEach((element) => {
+            const catDiv = document.getElementById(element);
+            catDiv.style.display = "none";
+        });
+
+
+        stock.forEach(producto => {
+            const safeId = dropdown.get(producto.category);
+            const productDiv = document.getElementById(safeId);
+            const items = productDiv.querySelectorAll(".item");
+
+
+            let categoriaTieneResultados = false;
+
+            items.forEach(item => {
+                const title = item.querySelector(".titleDiv h3").textContent.toLowerCase();
+
+                if (title.includes(query)) {
+                    item.style.display = "block";
+                    categoriaTieneResultados = true;
+                } else {
+                    item.style.display = "none";
+                }
+            });
+
+            productDiv.style.display = categoriaTieneResultados ? "block" : "none";
+        });
+    });
+
     
 
 });
