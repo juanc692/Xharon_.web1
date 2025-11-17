@@ -94,13 +94,8 @@ button:active{
     place-self: center left;
     position: absolute;
     transform: translate(-50%, 0%);
-    /* left:50%; */
-    left: 7%;
+    left:50%;
+    /* left: 7%; */
     color: white;
-}
-.subheader{
-    width: 100%;
-    height: 40px;
-    background-color: brown;
 }
 

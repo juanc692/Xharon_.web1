@@ -1,6 +1,10 @@
 const main = document.getElementById('main');
 const content = document.getElementById('container');
 
+const headerSend = document.querySelector('.header-send');
+const headerSearch = document.querySelector('.header-search');
+const headerCart = document.querySelector('.header-cart');
+
 function lerp(a, b, t) {
     return a + (b - a) * t;
     }
@@ -21,6 +25,11 @@ function intro()
     main.classList.add('mainIntro');
     content.style.opacity = '0';
     content.style.display = 'none';
+
+    headerSend.style.opacity = '0';
+    headerSearch.style.opacity = '0';
+    headerCart.style.opacity = '0';
+
     let contador = 0;
     const intro = document.createElement('div');
     intro.classList.add('intro');
@@ -54,6 +63,9 @@ function intro()
         {
             time = smoothLerp(time,1.1,0.1);
             content.style.opacity = `${time}`;
+            headerSend.style.opacity = `${time}`;
+            headerSearch.style.opacity = `${time}`;
+            headerCart.style.opacity = `${time}`;
             console.log(time)
             setTimeout(fadeProductsIn, 10);
         }
